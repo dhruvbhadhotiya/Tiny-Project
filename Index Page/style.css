@@ -6,6 +6,7 @@
 }
 
 body {
+    background-image: images/;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
