@@ -35,7 +35,7 @@ Make sure you have the following installed on your machine:
 ### Steps:
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/event-management-website.git
+    git clone https://github.com/yourusername/Tiny-project.git
     ```
 2. Navigate to the project folder:
     ```bash

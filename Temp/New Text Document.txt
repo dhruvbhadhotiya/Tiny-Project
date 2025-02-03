@@ -1,0 +1,4 @@
+1: AI Based smart Document Management for Lawyers(Simplified GUI)
+2: Smart Ai based Job recommendation System(According to your Qualification.)
+3: AI psychologist
+4: Event management for GLA(Website)
