@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url('images/background.jpg');
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #272424;
+    z-index: 999;
+    position: fixed; /* Changed from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9375em 1.25em;
+    transition: 0.5s ease;
+}
+
+header .logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navbar {
+    position: relative;
+}
+
+header .navbar .navbar-items {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar .navbar-items a {
+    position: relative;
+    color: wheat;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 0.625em;
+    text-decoration: none;
+    padding-bottom: 0.3125em;
+}
+
+header .navbar .navbar-items a:hover {
+    border-bottom: 0.125em solid wheat;
+}
+
+header, footer {
+    flex-shrink: 0;
+}
+
+main {
+    flex-grow: 1;
+    padding: 1.25em;
+    padding-top: 5em; /* Add padding to the top to create space for the fixed navbar */
+    background-color: #f4f4f4;
+
+}
+
+/* --------------------------CSS FOR DROPDOWN--------------------------------------- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cf5656;
+    min-width: 10em;
+    box-shadow: 0em 0.5em 1em 0em rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #875050;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --------------------------CSS FOR MAIN CONTENT----------------------------------- */
+.introduction, .upcoming-events, .recent-news {
+    margin-bottom: 1.25em;
+    padding: 1.25em;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.introduction h1, .upcoming-events h2, .recent-news h2 {
+    margin-bottom: 0.625em;
+    color: #333;
+    font-size: 1.8em;
+    border-bottom: 0.125em solid #cf5656;
+    padding-bottom: 0.3125em;
+}
+
+.introduction p, .upcoming-events p, .recent-news p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.upcoming-events ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.upcoming-events li {
+    flex: 1 1 calc(33.333% - 1.25em);
+    margin: 0.625em;
+    padding: 1.25em;
+    background-color: #fff;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.upcoming-events li:hover {
+    transform: translateY(-0.3125em);
+    cursor:pointe;
+}
+
+.upcoming-events li h3 {
+    margin: 0 0 0.625em;
+    color: #cf5656;
+}
+
+.upcoming-events li p {
+    margin: 0.3125em 0;
+    color: #666;
+}
+
+.recent-news article {
+    margin-bottom: 0.625em;
+    padding: 0.625em;
+    background-color: #f9f9f9;
+    border-left: 0.25em solid #cf5656;
+    border-radius: 0.25em;
+}
+
+.recent-news article h3 {
+    margin: 0;
+    color: #cf5656;
+}
+
+/* --------------------------CSS FOR FOOTER--------------------------------------- */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.25em 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info, .social-media {
+    margin: 0.625em;
+}
+
+.contact-info h3, .social-media h3 {
+    margin-bottom: 0.625em;
+}
+
+.contact-info p {
+    margin: 0.3125em 0;
+}
+
+.social-media a {
+    margin: 0 0.625em;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 1.875em;
+    height: 1.875em;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+.signin-btn {
+    background: none;
+    color: black;
+    padding: 0.625em 1.25em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.25em 0.125em;
+    cursor: pointer;
+    border-radius: 0.75em;
+    transition: background 0.3s ease;
+}
+.signin-btn:hover {
+    background: rgb(136, 93, 13);
+}
+.btn-outline-secondary {
+    color: wheat;
+    border-color: wheat;
+}
+.btn-outline-secondary:hover {
+    background-color: wheat;
+    color: black;
+}
+.navbar-items {
+    display: flex;
+    align-items: center;
+}
+.navbar-items a {
+    margin-left: 1.875em;
+}
