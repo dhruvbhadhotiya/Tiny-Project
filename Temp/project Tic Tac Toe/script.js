@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentPlayer = 'X';
     let gameActive = true;
 
+    // Clear the initial text content of each cell
+    cells.forEach(cell => cell.textContent = '');
+
     const winningCombinations = [
         [0, 1, 2],
         [3, 4, 5],
@@ -111,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        console.log(`Player: ${player}, Best Move: ${moves[bestMove].index}, Score: ${moves[bestMove].score}`);
         return moves[bestMove];
     }
 

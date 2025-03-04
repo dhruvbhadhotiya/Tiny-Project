@@ -20,7 +20,7 @@ body {
 
 .cell {
     border-radius: 0px;
-    height: 90px;  /* Adjusted for a better fit */
+    height: 90px; 
     width: 90px;
     display: flex;
     justify-content: center;
